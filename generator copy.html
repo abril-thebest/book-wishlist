@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Generators</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Random Generators</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="generators.html">Random Generators</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Generate a Random Book</h2>
+        <button onclick="generateRandomBook()">Generate Random Book</button>
+        <div id="randomBook"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Book Wishlist</p>
+    </footer>
+
+    <script>
+        const wishlist = [
+            { title: "Book Title 1", author: "Author 1", link: "https://www.amazon.com/dp/BOOK_ASIN_1" },
+            { title: "Book Title 2", author: "Author 2", link: "https://www.amazon.com/dp/BOOK_ASIN_2" },
+            { title: "Book Title 3", author: "Author 3", link: "https://www.amazon.com/dp/BOOK_ASIN_3" }
+        ];
+
+        function generateRandomBook() {
+            const randomIndex = Math.floor(Math.random() * wishlist.length);
+            const randomBook = wishlist[randomIndex];
+            const bookDiv = document.getElementById('randomBook');
+            bookDiv.innerHTML = `<p><strong>${randomBook.title}</strong> by ${randomBook.author} - <a href="${randomBook.link}" target="_blank">Order on Amazon</a></p>`;
+        }
+    </script>
+</body>
+</html>
