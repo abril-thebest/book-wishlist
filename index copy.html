@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Wishlist</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
 </head>
 <body>
     <header>
-        <h1>Welcome to Book Wishlist</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-                <li><a href="generators.html">Random Generators</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Book Wishlist</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="generators.html">Random Generators</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h2>Create Your Wishlist</h2>
-        <p>This website allows you to create a wishlist of books and order them directly from Amazon.</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Your Next Favorite Book</h2>
+                <p>Track your favorite books and get them directly from Amazon.</p>
+                <a href="wishlist.html" class="btn">View My Wishlist</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="images/organize-books.jpg" alt="Organize Books">
+                <h3>Organize Your Book List</h3>
+                <p>Create and manage your own book wishlists with ease.</p>
+            </div>
+            <!-- More feature sections here -->
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Book Wishlist</p>
+        <div class="container">
+            <p>&copy; 2024 Book Wishlist</p>
+        </div>
     </footer>
 </body>
 </html>
