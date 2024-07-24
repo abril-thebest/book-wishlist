@@ -1,46 +1,144 @@
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Rosarivo', serif;
     margin: 0;
     padding: 0;
+    color: #333;
     background-color: #f4f4f4;
 }
 
+/* Header and Navigation */
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    padding: 1.5em 0;
+    border-bottom: 4px solid gold;
 }
 
 header h1 {
     margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Sevillana', serif; /* Sevillana for main heading */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 1em;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Courier New', Courier, monospace; /* Courier New for links */
 }
 
-main {
-    padding: 2em;
+nav ul li a:hover {
+    text-decoration: underline;
+    color: gold;
 }
 
-footer {
-    background-color: #333;
+/* Hero Section */
+.hero {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
     color: #fff;
+    padding: 4em 0;
     text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-family: 'Rosarivo', serif; /* Rosarivo for hero heading */
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    color: #fff;
+    background: gold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-family: 'Rosarivo', serif; /* Rosarivo for buttons */
+}
+
+.btn:hover {
+    background: #f1c40f;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.feature {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    width: 30%;
+    margin: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.feature h3 {
+    font-family: 'Rosarivo', serif; /* Rosarivo for feature headings */
+    color: gold;
+    margin-top: 0.5em;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+/* Highlight specific words */
+.highlight {
+    font-family: 'Sevillana', serif; /* Sevillana for highlighted words */
+    color: gold;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
     padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    border-top: 4px solid gold;
+}
+
+footer p {
+    margin: 0;
 }
